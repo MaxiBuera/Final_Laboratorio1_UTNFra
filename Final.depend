@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1563399683 source:c:\users\maxi\desktop\final\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1563038304 c:\users\maxi\desktop\final\linkedlist.h
+
+1582559832 source:c:\users\maxi\desktop\final\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1563038304 c:\users\maxi\desktop\final\input.h
+
+1582569393 source:c:\users\maxi\desktop\final\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"bicicletas.h"
+	"input.h"
+
+1582564622 c:\users\maxi\desktop\final\bicicletas.h
+
+1582566732 source:c:\users\maxi\desktop\final\bicicletas.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"input.h"
+	"LinkedList.h"
+	"bicicletas.h"
+
