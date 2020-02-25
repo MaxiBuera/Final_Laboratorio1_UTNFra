@@ -42,8 +42,8 @@ int main()
         case 3:
             if(ll_len(list))
                 {
-                  //  ll_map(list, bicicleta_velocidadPromedio);
-                    //printf("\n");
+                    ll_map(list, bicicleta_velocidadPromedio);
+                    printf("\n");
                 }
                 else
                     printf("\nEl archivo aun no ha sido cargado.\n");
@@ -51,8 +51,8 @@ int main()
         case 4:
             if(ll_len(list))
             {
-               pArraySubList = ll_filter(list, bicicleta_filterType);
-               bicicleta_imprimirListaBicicletas(pArraySubList);
+             /*  pArraySubList = ll_filter(list, bicicleta_filterType);
+               bicicleta_imprimirListaBicicletas(pArraySubList);*/
             }
             break;
         case 5:

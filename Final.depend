@@ -62,3 +62,65 @@
 	<string.h>
 	"LinkedList.h"
 
+1582643906 source:c:\users\maxi\desktop\final_laboratorio1_utnfra\bicicletas.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"input.h"
+	"LinkedList.h"
+	"bicicletas.h"
+	"parser.h"
+
+1582643801 c:\users\maxi\desktop\final_laboratorio1_utnfra\input.h
+
+1582643801 c:\users\maxi\desktop\final_laboratorio1_utnfra\linkedlist.h
+
+1582643907 c:\users\maxi\desktop\final_laboratorio1_utnfra\bicicletas.h
+
+1582643801 c:\users\maxi\desktop\final_laboratorio1_utnfra\parser.h
+
+1582643801 source:c:\users\maxi\desktop\final_laboratorio1_utnfra\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"input.h"
+	"LinkedList.h"
+	"bicicletas.h"
+	"parser.h"
+
+1582643801 source:c:\users\maxi\desktop\final_laboratorio1_utnfra\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1582643801 source:c:\users\maxi\desktop\final_laboratorio1_utnfra\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1582643867 source:c:\users\maxi\desktop\final_laboratorio1_utnfra\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"bicicletas.h"
+	"input.h"
+	"parser.h"
+	"informes.h"
+
+1582643801 c:\users\maxi\desktop\final_laboratorio1_utnfra\informes.h
+
+1582643801 source:c:\users\maxi\desktop\final_laboratorio1_utnfra\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"bicicletas.h"
+	"input.h"
+	"parser.h"
+

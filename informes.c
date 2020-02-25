@@ -12,7 +12,7 @@
 void bicicleta_printHeader(void)
 {
     printf("\n-------------------------------------------------------------------------------\n");
-    printf("ID      NOMBRE        TIPO       TIEMPO");
+    printf("ID      NOMBRE        TIPO       TIEMPO       V.PROMEDIO");
     printf("\n-------------------------------------------------------------------------------\n");
 }
 
@@ -29,7 +29,7 @@ void bicicleta_imprimirBicicleta(eBicicleta* nuevaBicicleta)
         bicicleta_getTipo(nuevaBicicleta, tipo);
         bicicleta_getTiempo(nuevaBicicleta, &tiempo);
 
-        printf("%d %12s %9s %16d\n", id, nombre, tipo, tiempo);
+        printf("%d %12s %9s %16d  %.2f\n", id, nombre, tipo, tiempo, velocidadPromedio);
     }
 }
 

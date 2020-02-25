@@ -6,6 +6,7 @@ typedef struct
     char nombre[128];
     char tipo[128];
     int tiempo;
+    float velocidadPromedio;
 }eBicicleta;
 
 #endif // bicicleta_H_INCLUDED
@@ -28,4 +29,7 @@ char bicicleta_getTipo(eBicicleta* this,char* tipo);
 int bicicleta_setTiempo(eBicicleta* this,int tiempo);
 int bicicleta_getTiempo(eBicicleta* this,int* tiempo);
 
-int bicicleta_filter(void* nuevaBicicleta)
+float bicicleta_setVelocidadPromedio(eBicicleta* this,float velocidadPromedio);
+float bicicleta_getVelocidadPromedio(eBicicleta* this,float* velocidadPromedio);
+
+//int bicicleta_filter(void* nuevaBicicleta)
