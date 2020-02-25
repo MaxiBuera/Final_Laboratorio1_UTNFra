@@ -35,3 +35,30 @@
 	"LinkedList.h"
 	"bicicletas.h"
 
+1582584134 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1582584134 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\input.h
+
+1582584134 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"bicicletas.h"
+	"input.h"
+
+1582584134 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\linkedlist.h
+
+1582584134 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\bicicletas.h
+
+1582584134 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+

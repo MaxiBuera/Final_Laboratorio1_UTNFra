@@ -4,6 +4,8 @@
 #include "LinkedList.h"
 #include "bicicletas.h"
 #include "input.h"
+#include "parser.h"
+#include "informes.h"
 
 
 int main()
@@ -11,7 +13,7 @@ int main()
     LinkedList *list = ll_newLinkedList();
 
 
-    //LinkedList* pArraySubList;
+    LinkedList* pArraySubList;
     //LinkedList* listaProblemaExpecifico;
     int opcion;
     /*int opcion2;*/
@@ -35,7 +37,6 @@ int main()
             if(ll_len(list))
             {
                bicicleta_imprimirListaBicicletas(list);
-
             }
             break;
         case 3:
@@ -50,8 +51,8 @@ int main()
         case 4:
             if(ll_len(list))
             {
-              // pArraySubList = ll_filter(list, bicicleta_filterType);
-             //  bicicleta_imprimirListaBicicletas(pArraySubList);
+               pArraySubList = ll_filter(list, bicicleta_filterType);
+               bicicleta_imprimirListaBicicletas(pArraySubList);
             }
             break;
         case 5:

@@ -28,10 +28,4 @@ char bicicleta_getTipo(eBicicleta* this,char* tipo);
 int bicicleta_setTiempo(eBicicleta* this,int tiempo);
 int bicicleta_getTiempo(eBicicleta* this,int* tiempo);
 
-void parser_LoadFromText(LinkedList *list, char* path);
-void parser_SaveFromText(LinkedList *list, char* path);
-
-void bicicleta_imprimirBicicleta(eBicicleta* nuevaBicicleta);
-void bicicleta_imprimirListaBicicletas(LinkedList* list);
-
-int menu_Principal(char* msj );
+int bicicleta_filter(void* nuevaBicicleta)
