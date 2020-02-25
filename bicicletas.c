@@ -20,18 +20,20 @@ eBicicleta* bicicleta_newParametros(char* idStr,char* nombreStr,char* tipoStr,ch
     char nombre[128];
     char tipo[128];
     int tiempo;
-    float velocidadPromedio;
+    //float velocidadPromedio;
 
     id = atoi(idStr);
     strcpy(nombre,nombreStr);
     strcpy(tipo,tipoStr);
     tiempo = atoi(tiempoStr);// convierte cadena a entero
 
+
     //bicicleta_setId(this,proximoId());
     bicicleta_setId(this,id);
     bicicleta_setNombre(this,nombre);
     bicicleta_setTipo(this,tipo);
     bicicleta_setTiempo(this,tiempo);
+    //bicicleta_setVelocidadPromedio(this,velocidadPromedio);
 
     return this;
 }
@@ -232,17 +234,32 @@ static int proximoId()
     return ultimoId;
 }
 
+
 int bicicleta_velocidadPromedio(void* auxBicicleta){
 
-    int retorno = 0;
+    int retorno = -1;
 
     if(auxBicicleta != NULL){
 
-        int velocidadPromedio;
+        int tiempo;
+        float tiempoHora;
+        float t;
+        float velocidadPromedio;
         auxBicicleta = (eBicicleta*)auxBicicleta;
 
-    }
+        bicicleta_getTiempo(auxBicicleta, &tiempo);
 
+        t = (float)tiempo;
+
+        tiempoHora = t*0.01666666666;
+
+        velocidadPromedio = 10/tiempoHora;
+        bicicleta_setVelocidadPromedio(auxBicicleta,velocidadPromedio);
+
+
+        retorno = 0;
+    }
+    return retorno;
 }
 
 /*

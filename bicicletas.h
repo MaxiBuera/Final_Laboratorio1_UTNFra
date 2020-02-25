@@ -32,4 +32,6 @@ int bicicleta_getTiempo(eBicicleta* this,int* tiempo);
 float bicicleta_setVelocidadPromedio(eBicicleta* this,float velocidadPromedio);
 float bicicleta_getVelocidadPromedio(eBicicleta* this,float* velocidadPromedio);
 
+int bicicleta_velocidadPromedio(void* auxBicicleta);
+
 //int bicicleta_filter(void* nuevaBicicleta)

@@ -13,10 +13,10 @@ int main()
     LinkedList *list = ll_newLinkedList();
 
 
-    LinkedList* pArraySubList;
+    //LinkedList* pArraySubList;
     //LinkedList* listaProblemaExpecifico;
     int opcion;
-    /*int opcion2;*/
+    int flag=0;
     do
     {
         opcion = menu_Principal("\n1.Cargar archivo"
@@ -35,15 +35,21 @@ int main()
             break;
         case 2:
             if(ll_len(list))
-            {
-               bicicleta_imprimirListaBicicletas(list);
+            {printf("%d aca\n",flag);
+                if(flag==0){
+                    bicicleta_imprimirListaBicicletas(list,flag);
+                }
+                else{
+                    bicicleta_imprimirListaBicicletas(list,flag);
+                }
             }
             break;
         case 3:
             if(ll_len(list))
                 {
                     ll_map(list, bicicleta_velocidadPromedio);
-                    printf("\n");
+                    flag++;
+                    printf("\nVelocidad Promedio Agregada...\n");
                 }
                 else
                     printf("\nEl archivo aun no ha sido cargado.\n");
@@ -74,5 +80,3 @@ int main()
 
     return 0;
 }
-
-

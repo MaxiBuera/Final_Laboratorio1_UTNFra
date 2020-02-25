@@ -44,19 +44,21 @@
 
 1582584134 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\input.h
 
-1582584134 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\main.c
+1582671899 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"LinkedList.h"
 	"bicicletas.h"
 	"input.h"
+	"parser.h"
+	"informes.h"
 
-1582584134 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\linkedlist.h
+1582668952 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\linkedlist.h
 
-1582584134 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\bicicletas.h
+1582668654 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\bicicletas.h
 
-1582584134 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\linkedlist.c
+1582668951 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\linkedlist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -123,4 +125,37 @@
 	"bicicletas.h"
 	"input.h"
 	"parser.h"
+
+1582668484 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\bicicletas.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"input.h"
+	"LinkedList.h"
+	"bicicletas.h"
+	"parser.h"
+
+1582586340 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\parser.h
+
+1582665635 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"bicicletas.h"
+	"input.h"
+	"parser.h"
+
+1582672187 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"input.h"
+	"LinkedList.h"
+	"bicicletas.h"
+	"parser.h"
+
+1582670071 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\informes.h
 
