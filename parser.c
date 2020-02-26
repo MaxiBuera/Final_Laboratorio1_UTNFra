@@ -61,15 +61,16 @@ void parser_SaveFromText(LinkedList *list, char* path)
     pFile = fopen(path,"w");
     if(pFile != NULL)
     {
-        fprintf(pFile,"ID_Bike,Nombre,Tipo,Tiempo\n");
+        fprintf(pFile,"ID,Nombre,Tipo,Tiempo,V.Promedio\n");
         for(i=0;i<len;i++)
         {
             eBicicleta* bicicleta = ll_get(list,i);
-            quantityWrite = fprintf(pFile,"%d,%s,%s,%d\n",
+            quantityWrite = fprintf(pFile,"%d,%s,%s,%d,%.2f\n",
                                     bicicleta->id,
                                     bicicleta->nombre,
                                     bicicleta->tipo,
-                                    bicicleta->tiempo);
+                                    bicicleta->tiempo,
+                                    bicicleta->velocidadPromedio);
             if(quantityWrite == 0)
             {
                 break;

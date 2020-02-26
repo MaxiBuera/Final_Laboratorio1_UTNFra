@@ -35,7 +35,7 @@
 	"LinkedList.h"
 	"bicicletas.h"
 
-1582584134 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\input.c
+1582674913 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\input.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -44,7 +44,7 @@
 
 1582584134 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\input.h
 
-1582671899 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\main.c
+1582685305 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -56,7 +56,7 @@
 
 1582668952 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\linkedlist.h
 
-1582668654 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\bicicletas.h
+1582682912 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\bicicletas.h
 
 1582668951 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\linkedlist.c
 	<stdio.h>
@@ -126,7 +126,7 @@
 	"input.h"
 	"parser.h"
 
-1582668484 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\bicicletas.c
+1582686126 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\bicicletas.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -135,10 +135,11 @@
 	"LinkedList.h"
 	"bicicletas.h"
 	"parser.h"
+	"informes.h"
 
 1582586340 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\parser.h
 
-1582665635 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\parser.c
+1582685483 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\parser.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -147,7 +148,7 @@
 	"input.h"
 	"parser.h"
 
-1582672187 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\informes.c
+1582685198 source:c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\informes.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -157,5 +158,5 @@
 	"bicicletas.h"
 	"parser.h"
 
-1582670071 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\informes.h
+1582685197 c:\users\maximiliano.e.buera\desktop\final_laboratorio1_utnfra\informes.h
 

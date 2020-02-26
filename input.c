@@ -69,7 +69,6 @@ int isValidRange(int desde,int hasta,int numero)
         return TRUE;
     }
     return FALSE;
-
 }
 
 int isValidDni(char str[])

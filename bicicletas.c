@@ -6,7 +6,7 @@
 #include "LinkedList.h"
 #include "bicicletas.h"
 #include "parser.h"
-
+#include "informes.h"
 
 
 static int proximoId();
@@ -262,22 +262,47 @@ int bicicleta_velocidadPromedio(void* auxBicicleta){
     return retorno;
 }
 
-/*
-int bicicleta_filter(void* nuevaBicicleta)
+int bicicleta_filterBMX(void* nuevaBicicleta)
 {
-    int returnAux = 0;
+    int retorno = 0;
 
-    if(nuevaBicicleta != NULL)
+    if( strcmp("BMX",((eBicicleta*)nuevaBicicleta)->tipo) == 0 )
     {
-        char *tipo;
-        nuevaBicicleta = (eBicicleta*)nuevaBicicleta;
-
-        bicicleta_getTipo(nuevaBicicleta, tipo);
-
-        if(strcmp("BMX",tipo))
-            returnAux = 1;
+        retorno = 1;
     }
-
-    return returnAux;
+    return retorno;
 }
-*/
+
+int bicicleta_filterPASEO(void* nuevaBicicleta)
+{
+    int retorno = 0;
+
+    if( strcmp("PASEO",((eBicicleta*)nuevaBicicleta)->tipo) == 0 )
+    {
+        retorno = 1;
+    }
+    return retorno;
+}
+
+int bicicleta_filterMTB(void* nuevaBicicleta)
+{
+    int retorno = 0;
+
+    if( strcmp("MTB",((eBicicleta*)nuevaBicicleta)->tipo) == 0 )
+    {
+        retorno = 1;
+    }
+    return retorno;
+}
+
+int bicicleta_filterPLAYERA(void* nuevaBicicleta)
+{
+    int retorno = 0;
+
+    if( strcmp("PLAYERA",((eBicicleta*)nuevaBicicleta)->tipo) == 0)
+    {
+        retorno = 1;
+    }
+    return retorno;
+}
+

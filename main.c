@@ -12,14 +12,15 @@ int main()
 {
     LinkedList *list = ll_newLinkedList();
 
-
     //LinkedList* pArraySubList;
-    //LinkedList* listaProblemaExpecifico;
+    LinkedList* listaPorTipo;
+
     int opcion;
+    int opcion2;
     int flag=0;
     do
     {
-        opcion = menu_Principal("\n1.Cargar archivo"
+        opcion = menu_Principal("\n\n1.Cargar archivo"
                                 "\n2.Imprimir lista"
                                 "\n3.Calcular velocidad promedio"
                                 "\n4.Filtrar por tipo"
@@ -57,10 +58,33 @@ int main()
         case 4:
             if(ll_len(list))
             {
-             /*  pArraySubList = ll_filter(list, bicicleta_filterType);
-               bicicleta_imprimirListaBicicletas(pArraySubList);*/
+                do{
+                    opcion2 = menu_Principal("\n1.BMX"
+                                              "\n2.PLAYERA"
+                                              "\n3.MTB"
+                                              "\n4.PASEO\n"
+                                            "\nElegir opcion: ");
+
+                    switch(opcion2)
+                    {
+                    case 1:
+                        listaPorTipo = ll_filter(list,bicicleta_filterBMX);
+                        break;
+                    case 2:
+                        listaPorTipo = ll_filter(list,bicicleta_filterPLAYERA);
+                        break;
+                    case 3:
+                        listaPorTipo = ll_filter(list,bicicleta_filterMTB);
+                        break;
+                    case 4:
+                        listaPorTipo = ll_filter(list,bicicleta_filterPASEO);
+                        break;
+                    }
+                }while(opcion2<=1 && opcion2 >=4);
+
+                parser_SaveFromText(listaPorTipo,"listaPorTipo.txt");
             }
-            break;
+                break;
         case 5:
             if(ll_len(list))
             {

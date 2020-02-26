@@ -86,5 +86,3 @@ int menu_Principal(char* msj )
     scanf("%d", &aux);
     return aux;
 }
-
-

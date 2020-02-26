@@ -34,4 +34,9 @@ float bicicleta_getVelocidadPromedio(eBicicleta* this,float* velocidadPromedio);
 
 int bicicleta_velocidadPromedio(void* auxBicicleta);
 
-//int bicicleta_filter(void* nuevaBicicleta)
+int bicicleta_filterBMX(void* nuevaBicicleta);
+int bicicleta_filterPASEO(void* nuevaBicicleta);
+int bicicleta_filterPLAYERA(void* nuevaBicicleta);
+int bicicleta_filterMTB(void* nuevaBicicleta);
+
+
