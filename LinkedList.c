@@ -606,6 +606,7 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
 
 }
 
+
 int ll_print(LinkedList* this,void (*pFunc)(void*))
 {
     int retorno = -1;
@@ -624,6 +625,14 @@ int ll_print(LinkedList* this,void (*pFunc)(void*))
     return retorno;
 }
 
+/** \brief  Recibe una lista y una funcion pFunc. Se iteran todos los elementos de la lista y se pasan
+            a la funcion pFunc  q recibirá el elemento. El  retorno de pFunc se agregará a la lista
+            resultado. Esta nueva lista será devuelta por ll_map().
+ * \param this LinkedList* Puntero a la lista
+ * \param pFunc (*pFunc) Puntero a la funcion criterio
+ * \return int Retorna  (-1) Error: si el puntero a la listas es NULL
+                                ( 0) Si ok
+ */
 int ll_map(LinkedList* this,int (*pFunc)(void*))
 {
     int retorno = -1;
@@ -642,6 +651,14 @@ int ll_map(LinkedList* this,int (*pFunc)(void*))
     return retorno;
 }
 
+/** \brief  Recibe una lista y una funcion fn. Se filtran todos los elementos de la lista y se pasan
+            a la funcion pFunc  q recibirá el elemento. La funcion ll_filter() generará la nueva lista
+            resultado, agregará a la misma los items correspondientes y la devolverá
+ * \param this LinkedList* Puntero a la lista
+ * \param pFunc (*pFunc) Puntero a la funcion criterio
+ * \return int Retorna  (-1) Error: si el puntero a la listas es NULL
+                                ( 0) Si ok
+ */
 LinkedList* ll_filter(LinkedList* this,int (*fn)(void*))
 {
     LinkedList* newList = NULL;

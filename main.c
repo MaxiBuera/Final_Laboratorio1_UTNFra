@@ -88,9 +88,11 @@ int main()
         case 5:
             if(ll_len(list))
             {
-              //  bicicleta_sortBicicletas(list);
-               // bicicleta_sortByTiempo(list);
+                //bicicleta_sortBicicletas(list);
+                //bicicleta_sortByTipo(list);
                 //bicicleta_imprimirListaBicicletas(list);
+
+                ll_sort(list, bicicleta_sortByTipo, 1);
 
             }
             break;

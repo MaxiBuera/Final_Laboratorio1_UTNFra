@@ -306,3 +306,27 @@ int bicicleta_filterPLAYERA(void* nuevaBicicleta)
     return retorno;
 }
 
+int bicicleta_sortByTipo(void* aux1,void* aux2)
+{
+    int retorno = 0;
+
+    if( (aux1 != NULL) && (aux2 != NULL) )
+    {
+        char tipo1[128];
+        char tipo2[128];
+
+        bicicleta_getTipo(aux1, tipo1);
+        bicicleta_getTipo(aux2, tipo2);
+
+        if(hours1 > hours2)
+            retorno = 1;
+        else
+        {
+            if(hours1 < hours2)
+                retorno = -1;
+        }
+    }
+
+    return retorno;
+}
+
